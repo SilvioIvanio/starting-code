@@ -480,58 +480,85 @@ input:checked + .slider-round:before {
 .table-container {
   /* TODO: Add table container styles */
   /* HINT: Use overflow-x and margin */
+  overflow-x: auto;
+  margin: 20px 0;
 }
 
 .table {
   /* TODO: Add table styles */
   /* HINT: Use width, border-collapse, border-spacing */
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .table th,
 .table td {
   /* TODO: Add table cell styles */
   /* HINT: Use padding, text-align, border-bottom */
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .table th {
   /* TODO: Add table header styles */
   /* HINT: Use background-color, font-weight, cursor */
+  background-color: var(--light-gray);
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .table th:hover {
   /* TODO: Add hover styles for table headers */
   /* HINT: Change background-color */
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .table tr {
   /* TODO: Add table row styles */
   /* HINT: Use transition */
+  transition: var(--transition);
 }
 
 .table tr:hover {
   /* TODO: Add hover styles for table rows */
   /* HINT: Change background-color with rgba for transparency */
+  background-color: rgba(67, 97, 238, 0.1);
 }
 
 /* Badge Styles */
 .badge {
   /* TODO: Add badge styles */
   /* HINT: Use display, padding, border-radius, font-size, font-weight, and margin-left */
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 10px;
 }
 
 .badge-primary {
   /* TODO: Add primary badge styles */
   /* HINT: Use background-color and color */
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .badge-success {
   /* TODO: Add success badge styles */
   /* HINT: Use background-color and color */
+  background-color: var(--success);
+  color: var(--white);
 }
 
 .badge-warning {
   /* TODO: Add warning badge styles */
   /* HINT: Use background-color and color */
+  background-color: var(--warning);
+  color: var(--white);
 }
 
 /* Alert Styles */
