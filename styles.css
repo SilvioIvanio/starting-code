@@ -127,6 +127,9 @@ p {
 .card-img {
   /* TODO: Add card image styles */
   /* HINT: Set width, height, and object-fit */
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 .card-content {
@@ -138,11 +141,16 @@ p {
 .card-title {
   /* TODO: Add card title styles */
   /* HINT: Set font-size, margin, and color */
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--dark);
 }
 
 .card-text {
   /* TODO: Add card text styles */
   /* HINT: Set color and margin */
+  color: var(--gray);
+  margin-bottom: 15px;  
 }
 
 /* Button Styles */
