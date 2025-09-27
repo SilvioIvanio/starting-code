@@ -306,36 +306,67 @@ p {
 .switch-container {
   /* TODO: Add switch container styles */
   /* HINT: Use display, align-items, and margin */
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .switch {
   /* TODO: Add switch styles */
   /* HINT: Use position, display, width, height, and margin-right */
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 .switch input {
   /* TODO: Add switch input styles */
   /* HINT: Use opacity, width, and height */
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider-round {
   /* TODO: Add slider round styles */
   /* HINT: Use position, cursor, top/left/right/bottom properties, background-color, transition, and border-radius */
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--light-gray);
+  transition: 0.4s; 
+  border-radius: 34px;
 }
 
 .slider-round:before {
   /* TODO: Add slider round before element styles */
   /* HINT: Use position, content, height, width, left, bottom, background-color, transition, and border-radius */
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--primary);
+  transition: 0.4s;
+  border-radius: 50%;
 }
 
 input:checked + .slider-round {
   /* TODO: Add checked slider round styles */
   /* HINT: Change background-color */
+  background-color: var(--secondary);
 }
 
 input:checked + .slider-round:before {
   /* TODO: Add checked slider round before element styles */
   /* HINT: Use transform with translateX */
+  transform: translateX(26px);
 }
 
 /* List Styles */
