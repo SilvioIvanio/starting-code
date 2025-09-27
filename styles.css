@@ -771,51 +771,53 @@ input:checked + .slider-round:before {
   color: var(--dark);
 }
 
-/* Modal Styles */
-.modal {
-  /* TODO: Add modal styles */
-  /* HINT: Use display, position, top/left, width, height, background-color, z-index, justify-content, and align-items */
-}
-
-.modal-content {
-  /* TODO: Add modal content styles */
-  /* HINT: Use background-color, border-radius, width, max-width, padding, and box-shadow */
-}
-
-.modal-header {
-  /* TODO: Add modal header styles */
-  /* HINT: Use display, justify-content, align-items, and margin-bottom */
-}
-
-.modal-title {
-  /* TODO: Add modal title styles */
-  /* HINT: Use font-size and color */
-}
-
-.modal-close {
-  /* TODO: Add modal close button styles */
-  /* HINT: Use background, border, font-size, cursor, and color */
-}
-
 /* Tooltip Styles */
 .tooltip {
   /* TODO: Add tooltip styles */
   /* HINT: Use position, display, border-bottom, and cursor */
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--dark);
+  cursor: help;
 }
 
 .tooltip .tooltip-text {
   /* TODO: Add tooltip text styles */
   /* HINT: Use visibility, width, background-color, color, text-align, border-radius, padding, position, z-index, bottom, left, margin-left, opacity, and transition */
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1000;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .tooltip .tooltip-text::after {
   /* TODO: Add tooltip arrow styles */
   /* HINT: Use content, position, top, left, margin-left, border-width, border-style, and border-color */
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--dark) transparent transparent transparent;
 }
 
 .tooltip:hover .tooltip-text {
   /* TODO: Add hover styles for tooltip */
   /* HINT: Change visibility and opacity */
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Accordion Styles */
@@ -842,6 +844,32 @@ input:checked + .slider-round:before {
 .accordion-content.active {
   /* TODO: Add styles for active accordion content */
   /* HINT: Use padding and max-height */
+}
+
+/* Modal Styles */
+.modal {
+  /* TODO: Add modal styles */
+  /* HINT: Use display, position, top/left, width, height, background-color, z-index, justify-content, and align-items */
+}
+
+.modal-content {
+  /* TODO: Add modal content styles */
+  /* HINT: Use background-color, border-radius, width, max-width, padding, and box-shadow */
+}
+
+.modal-header {
+  /* TODO: Add modal header styles */
+  /* HINT: Use display, justify-content, align-items, and margin-bottom */
+}
+
+.modal-title {
+  /* TODO: Add modal title styles */
+  /* HINT: Use font-size and color */
+}
+
+.modal-close {
+  /* TODO: Add modal close button styles */
+  /* HINT: Use background, border, font-size, cursor, and color */
 }
 
 /* Tabs Styles */
