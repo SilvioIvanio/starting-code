@@ -730,31 +730,45 @@ input:checked + .slider-round:before {
 .breadcrumb {
   /* TODO: Add breadcrumb styles */
   /* HINT: Use display, list-style, padding, and margin */
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumb-item {
   /* TODO: Add breadcrumb item styles */
   /* HINT: Use display and align-items */
+  display: flex;
+  align-items: center;
 }
 
 .breadcrumb-item:not(:last-child)::after {
   /* TODO: Add separator for breadcrumb items */
   /* HINT: Use content, margin, and color */
+  content: ">";
+  margin: 0 8px;
+  color: var(--gray);
 }
 
 .breadcrumb-link {
   /* TODO: Add breadcrumb link styles */
   /* HINT: Use color, text-decoration, and cursor */
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .breadcrumb-link:hover {
   /* TODO: Add hover styles for breadcrumb links */
   /* HINT: Add text-decoration */
+  text-decoration: underline;
 }
 
 .breadcrumb-item.active {
   /* TODO: Add styles for active breadcrumb item */
   /* HINT: Use color */
+  color: var(--dark);
 }
 
 /* Modal Styles */
