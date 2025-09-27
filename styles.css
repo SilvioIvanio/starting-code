@@ -261,26 +261,45 @@ p {
 .slider-container {
   /* TODO: Add slider container styles */
   /* HINT: Use margin */
+  margin: 20px 0;
 }
 
 .slider {
   /* TODO: Add slider styles */
   /* HINT: Use appearance, width, height, border-radius, background, and outline */
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: var(--light-gray);
+  outline: none;
 }
 
 .slider::-webkit-slider-thumb {
   /* TODO: Add slider thumb styles */
   /* HINT: Use appearance, width, height, border-radius, background, cursor, and transition */
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .slider::-webkit-slider-thumb:hover {
   /* TODO: Add hover styles for slider thumb */
   /* HINT: Use background and transform */
+  background: var(--secondary);
+  transform: scale(1.1);
 }
 
 .slider-value {
   /* TODO: Add slider value styles */
   /* HINT: Use text-align, font-weight, and color */
+  text-align: center;
+  font-weight: 600;
+  color: var(--dark);
 }
 
 /* Switch Styles */
