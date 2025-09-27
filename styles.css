@@ -824,26 +824,44 @@ input:checked + .slider-round:before {
 .accordion {
   /* TODO: Add accordion styles */
   /* HINT: Use margin */
+  margin: 20px 0;
 }
 
 .accordion-item {
   /* TODO: Add accordion item styles */
   /* HINT: Use border, border-radius, margin-bottom, and overflow */
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .accordion-header {
   /* TODO: Add accordion header styles */
   /* HINT: Use padding, background-color, cursor, display, justify-content, align-items, and font-weight */
+  padding: 15px 20px;
+  background-color: var(--light-gray);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
 }
 
 .accordion-content {
   /* TODO: Add accordion content styles */
   /* HINT: Use padding, max-height, overflow, and transition */
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
 .accordion-content.active {
   /* TODO: Add styles for active accordion content */
   /* HINT: Use padding and max-height */
+  padding: 15px 20px;
+  max-height: 200px;
 }
 
 /* Modal Styles */
