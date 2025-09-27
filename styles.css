@@ -687,26 +687,43 @@ input:checked + .slider-round:before {
 .pagination {
   /* TODO: Add pagination styles */
   /* HINT: Use display, list-style, padding, and margin */
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .page-item {
   /* TODO: Add page item styles */
   /* HINT: Use margin-right */
+  margin-right: 5px;
 }
 
 .page-link {
   /* TODO: Add page link styles */
   /* HINT: Use display, padding, border, border-radius, color, text-decoration, transition, and cursor */
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  color: var(--dark);
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
 }
 
 .page-link:hover {
   /* TODO: Add hover styles for page links */
   /* HINT: Change background-color */
+  background-color: var(--light-gray);
 }
 
 .page-item.active .page-link {
   /* TODO: Add styles for active page link */
   /* HINT: Use background-color, color, and border-color */
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
 }
 
 /* Breadcrumb Styles */
