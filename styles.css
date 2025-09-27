@@ -373,31 +373,48 @@ input:checked + .slider-round:before {
 .list {
   /* TODO: Add list styles */
   /* HINT: Use list-style-type, background-color, border-radius, overflow, and box-shadow */
+  list-style-type: none;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
 }
 
 .list-item {
   /* TODO: Add list item styles */
   /* HINT: Use padding, border-bottom, display, align-items, cursor, and transition */
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .list-item:last-child {
   /* TODO: Add styles for last list item */
   /* HINT: Remove border-bottom */
+  border-bottom: none;
 }
 
 .list-item:hover {
   /* TODO: Add hover styles for list items */
   /* HINT: Change background-color */
+  background-color: var(--light-gray);
 }
 
 .list-item i {
   /* TODO: Add icon styles in list items */
   /* HINT: Use margin-right and color */
+  margin-right: 15px;
+  color: var(--primary);
 }
 
 .list-item .avatar {
   /* TODO: Add avatar styles in list items */
   /* HINT: Use width, height, border-radius, margin-right, and object-fit */
+  
+  /* There is no avatar class */
 }
 
 /* Form Styles */
