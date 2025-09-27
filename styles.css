@@ -656,21 +656,31 @@ input:checked + .slider-round:before {
 .progress {
   /* TODO: Add progress bar container styles */
   /* HINT: Use height, background-color, border-radius, margin, and overflow */
+  height: 20px;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
 }
 
 .progress-bar {
   /* TODO: Add progress bar styles */
   /* HINT: Use height, border-radius, and transition */
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
 }
 
 .progress-primary {
   /* TODO: Add primary progress bar styles */
   /* HINT: Use background-color */
+  background-color: var(--primary);
 }
 
 .progress-success {
   /* TODO: Add success progress bar styles */
   /* HINT: Use background-color */
+  background-color: var(--success);
 }
 
 /* Pagination Styles */
