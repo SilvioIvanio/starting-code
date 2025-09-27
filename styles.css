@@ -176,16 +176,19 @@ p {
 .btn-success {
   /* TODO: Add success button styles */
   /* HINT: Change background-color */
+  background-color: var(--success);
 }
 
 .btn-warning {
   /* TODO: Add warning button styles */
   /* HINT: Change background-color */
+  background-color: var(--warning);
 }
 
 .btn-info {
   /* TODO: Add info button styles */
   /* HINT: Change background-color */
+  background-color: var(--info);
 }
 
 .btn-outline {
@@ -206,6 +209,8 @@ p {
 .btn-group {
   /* TODO: Add button group styles */
   /* HINT: Use display and gap */
+  display: flex;
+  gap: 10px;
 }
 
 /* Chip Styles */
