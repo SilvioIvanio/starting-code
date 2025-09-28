@@ -211,6 +211,7 @@ p {
   /* HINT: Use display and gap */
   display: flex;
   gap: 10px;
+  padding-bottom: 10px;
 }
 
 /* Chip Styles */
@@ -1427,7 +1428,7 @@ input:checked + .slider-round:before {
 }
 
 .calendar-day {
-  width: 30px;
+  /* width: 30px; */
   height: 30px;
   display: flex;
   align-items: center;
@@ -1455,7 +1456,7 @@ input:checked + .slider-round:before {
 }
 
 .mood-emoji {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
