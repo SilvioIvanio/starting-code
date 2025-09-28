@@ -1037,6 +1037,8 @@ input:checked + .slider-round:before {
 }
 
 /* Toast Styles */
+
+/* Classes were not implemented */
 .toast-container {
   /* TODO: Add toast container styles */
   /* HINT: Use position, bottom, right, and z-index */
@@ -1116,6 +1118,8 @@ input:checked + .slider-round:before {
 }
 
 /* Animation Classes */
+
+/* Classes were not implemented */
 .fade-in {
   /* TODO: Add fade-in animation */
   /* HINT: Use animation property */
@@ -1155,48 +1159,104 @@ input:checked + .slider-round:before {
 .panel-close {
   /* TODO: Add panel close button styles */
   /* HINT: Use background, border, font-size, cursor, color, and transition */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--dark);
+  transition: var(--transition);
 }
 
 .panel-close:hover {
   /* TODO: Add hover styles for panel close button */
   /* HINT: Use color and transform */
+  color: var(--primary);
+  transform: scale(1.2);
 }
 
 /* Pull tab that appears on the left edge when panel is closed */
 .panel-pull-tab {
   /* TODO: Add panel pull tab styles */
   /* HINT: Use position, top, left, transform, background-color, color, padding, border-radius, cursor, box-shadow, z-index, display, align-items, justify-content, and transition */
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: var(--light-gray);
+  color: var(--dark);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
 }
 
 .panel-pull-tab:hover {
   /* TODO: Add hover styles for panel pull tab */
   /* HINT: Use padding-right and background-color */
+  padding-right: 15px;
+  background-color: var(--primary);
 }
 
 /* Customization Panel */
 .customization-panel {
   /* TODO: Add customization panel styles */
   /* HINT: Use position, top, left, width, height, background-color, box-shadow, padding, overflow-y, transform, transition, and z-index */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: var(--card-bg);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 999;
 }
 
 .customization-panel.open {
   /* TODO: Add styles for open customization panel */
   /* HINT: Use transform */
+  transform: translateX(0);
 }
 
 .panel-toggle {
   /* TODO: Add panel toggle styles */
   /* HINT: Use position, top, right, z-index, padding, background-color, color, border, border-radius, and cursor */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  padding: 5px 10px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .color-option {
   /* TODO: Add color option styles */
   /* HINT: Use width, height, border-radius, display, margin, cursor, and border */
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .color-option.active {
   /* TODO: Add active color option styles */
   /* HINT: Use border-color */
+  border-color: var(--dark);
 }
 
 /* Interactive Widgets */
