@@ -33,6 +33,4 @@ I learned how styling can work with elements created by JavaScript.
 - Make grid and flex items flexible to avoid overflow.
 - Check JavaScript for dynamic elements when styles seem to be missing.
 
-**Repository:** https://github.com/SilvioIvanio/starting-code
-
 **Live:** https://silvioivanio.github.io/starting-code/
