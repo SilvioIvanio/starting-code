@@ -975,36 +975,65 @@ input:checked + .slider-round:before {
 .dropdown {
   /* TODO: Add dropdown styles */
   /* HINT: Use position and display */
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-toggle {
   /* TODO: Add dropdown toggle styles */
   /* HINT: Use padding, background-color, color, border, border-radius, cursor, display, and align-items */
+  padding: 10px 15px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-toggle::after {
   /* TODO: Add dropdown toggle indicator */
   /* HINT: Use content, margin-left, and font-size */
+  content: "▼";
+  margin-left: 5px;
+  font-size: 0.8rem;
 }
 
 .dropdown-menu {
   /* TODO: Add dropdown menu styles */
   /* HINT: Use position, top, left, background-color, border-radius, box-shadow, min-width, z-index, and display */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--card-bg);
+  border-radius: 5px;
+  box-shadow: var(--card-shadow);
+  min-width: 160px;
+  z-index: 1000;
+  display: none;
 }
 
 .dropdown-menu.show {
   /* TODO: Add styles for visible dropdown menu */
   /* HINT: Change display */
+  display: block;
 }
 
 .dropdown-item {
   /* TODO: Add dropdown item styles */
   /* HINT: Use padding, display, color, text-decoration, and transition */
+  padding: 10px 15px;
+  display: block;
+  color: var(--dark);
+  text-decoration: none;
+  transition: var(--transition);
 }
 
 .dropdown-item:hover {
   /* TODO: Add hover styles for dropdown items */
   /* HINT: Change background-color */
+  background-color: var(--light-gray);
 }
 
 /* Toast Styles */
