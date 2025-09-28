@@ -1382,6 +1382,11 @@ input:checked + .slider-round:before {
     display: flex;
     flex-direction: column;
   }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* ========== PRESERVED WIDGET STYLES ========== */
