@@ -996,7 +996,7 @@ input:checked + .slider-round:before {
 .dropdown-toggle::after {
   /* TODO: Add dropdown toggle indicator */
   /* HINT: Use content, margin-left, and font-size */
-  content: "▼";
+  content: "";
   margin-left: 5px;
   font-size: 0.8rem;
 }
