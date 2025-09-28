@@ -1315,18 +1315,22 @@ input:checked + .slider-round:before {
 
   .component-grid {
     /* Change grid to single column */
+    grid-template-columns: 1fr;
   }
 
   .btn-group {
     /* Stack buttons vertically */
+    flex-direction: column;
   }
 
   .nav {
     /* Make nav items stack vertically */
+    flex-direction: column;
   }
 
   .tab-header {
     /* Make tab links stack vertically */
+    flex-direction: column;
   }
 }
 
