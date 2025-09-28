@@ -1263,31 +1263,49 @@ input:checked + .slider-round:before {
 .interactive-widgets {
   /* TODO: Add interactive widgets container styles */
   /* HINT: Use display, grid-template-columns, gap, and margin-bottom */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .widget {
   /* TODO: Add widget styles */
   /* HINT: Use background-color, border-radius, box-shadow, padding, display, and transition */
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  padding: 20px;
+  display: flex;
+  transition: var(--transition);
 }
 
 .widget:hover {
   /* TODO: Add hover styles for widgets */
   /* HINT: Use transform and box-shadow */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .widget i {
   /* TODO: Add widget icon styles */
   /* HINT: Use font-size, color, and margin-right */
+  font-size: 2rem;
+  color: var(--primary);
+  margin-right: 15px;
 }
 
 .widget-content {
   /* TODO: Add widget content styles */
   /* HINT: Use flex property */
+  flex: 1;
 }
 
 .widget h3 {
   /* TODO: Add widget heading styles */
   /* HINT: Use margin-top, margin-bottom, color, and font-size */
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--dark);
+  font-size: 1.2rem;
 }
 
 /* Responsive Design */
