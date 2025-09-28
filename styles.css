@@ -1071,26 +1071,37 @@ input:checked + .slider-round:before {
 .code-editor {
   /* TODO: Add code editor styles */
   /* HINT: Use background-color, border-radius, padding, margin, font-family, color, and overflow-x */
+  background-color: var(--light-gray);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--dark);
+  overflow-x: auto;
 }
 
 .code-comment {
   /* TODO: Add code comment styles */
   /* HINT: Use color */
+  color: var(--gray);
 }
 
 .code-selector {
   /* TODO: Add code selector styles */
   /* HINT: Use color */
+  color: var(--primary);
 }
 
 .code-property {
   /* TODO: Add code property styles */
   /* HINT: Use color */
+  color: var(--dark);
 }
 
 .code-value {
   /* TODO: Add code value styles */
   /* HINT: Use color */
+  color: var(--info);
 }
 
 /* Theme Selector */
