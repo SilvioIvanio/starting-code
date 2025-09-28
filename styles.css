@@ -414,7 +414,7 @@ input:checked + .slider-round:before {
   /* TODO: Add avatar styles in list items */
   /* HINT: Use width, height, border-radius, margin-right, and object-fit */
   
-  /* There is no avatar class */
+  /* !!! Class not implemented !!! */
 }
 
 /* Form Styles */
@@ -1038,35 +1038,57 @@ input:checked + .slider-round:before {
 
 /* Toast Styles */
 
-/* Classes were not implemented */
 .toast-container {
   /* TODO: Add toast container styles */
   /* HINT: Use position, bottom, right, and z-index */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .toast {
   /* TODO: Add toast styles */
   /* HINT: Use padding, background-color, border-radius, box-shadow, margin-bottom, display, align-items, justify-content, min-width, transform, opacity, and transition */
+  padding: 15px 20px;
+  background-color: var(--card-bg);
+  border-radius: 5px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 250px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .toast.show {
   /* TODO: Add styles for visible toast */
   /* HINT: Use transform and opacity */
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .toast-success {
   /* TODO: Add success toast styles */
   /* HINT: Use border-left */
+  border-left: 5px solid var(--success);
 }
 
 .toast-warning {
   /* TODO: Add warning toast styles */
   /* HINT: Use border-left */
+  border-left: 5px solid var(--warning);
 }
 
 .toast-close {
   /* TODO: Add toast close button styles */
   /* HINT: Use cursor and font-weight */
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0 5px;
 }
 
 /* Code Editor Styles */
@@ -1107,6 +1129,9 @@ input:checked + .slider-round:before {
 }
 
 /* Theme Selector */
+
+/* ⬇⬇⬇ Classes were not implemented!!! ⬇⬇⬇ */
+
 .theme-selector {
   /* TODO: Add theme selector styles */
   /* HINT: Use position, top, right, and z-index */
@@ -1119,7 +1144,6 @@ input:checked + .slider-round:before {
 
 /* Animation Classes */
 
-/* Classes were not implemented */
 .fade-in {
   /* TODO: Add fade-in animation */
   /* HINT: Use animation property */
@@ -1149,11 +1173,18 @@ input:checked + .slider-round:before {
   /* TODO: Add bounce keyframes */
   /* HINT: Define keyframe percentages with transform */
 }
+/* ⬆⬆⬆ Classes were not implemented!!! ⬆⬆⬆ */
 
 /* Panel Header with close button */
 .panel-header {
   /* TODO: Add panel header styles */
   /* HINT: Use display, justify-content, align-items, margin-bottom, border-bottom, and padding-bottom */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
 }
 
 .panel-close {
