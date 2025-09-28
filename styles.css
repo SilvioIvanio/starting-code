@@ -921,41 +921,54 @@ input:checked + .slider-round:before {
 .tabs {
   /* TODO: Add tabs container styles */
   /* HINT: Use margin */
+  margin: 20px 0;
 }
 
 .tab-header {
   /* TODO: Add tab header styles */
   /* HINT: Use display and border-bottom */
+  display: flex;
+  border-bottom: 2px solid var(--border-color);
 }
 
 .tab-link {
   /* TODO: Add tab link styles */
   /* HINT: Use padding, cursor, transition, and border-bottom */
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: var(--transition);
+  border-bottom: 2px solid transparent;
 }
 
 .tab-link:hover {
   /* TODO: Add hover styles for tab links */
   /* HINT: Change color */
+  color: var(--primary);
 }
 
 .tab-link.active {
   /* TODO: Add styles for active tab link */
   /* HINT: Use color and border-bottom */
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 .tab-content {
   /* TODO: Add tab content styles */
   /* HINT: Use padding */
+  padding: 20px 0;
 }
 
 .tab-pane {
   /* TODO: Add tab pane styles */
   /* HINT: Use display property */
+  display: none;
 }
 
 .tab-pane.active {
   /* TODO: Add styles for active tab pane */
   /* HINT: Change display */
+  display: block;
 }
 
 /* Dropdown Styles */
